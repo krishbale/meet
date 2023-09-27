@@ -1,26 +1,18 @@
 "use client"
-import { JaaSMeeting } from "@jitsi/react-sdk"
+import BeautifulButton from "@/components/button"
+
 export default function Home() {
   return (
+    <div className="bg-dark-100 min-h-screen flex flex-col justify-center items-center">
+    <main className="text-center">
+      <h2 className="text-3xl font-semibold mb-4">Join with Balkrishna Universe</h2>
+      <div className="mb-8">
+        <BeautifulButton text="Meet Now" href="/now" gradient={true} />
+      </div>
+    </main>
+  </div>
     
-       <JaaSMeeting 
-    appId = { process.env.APPID }
-    roomName = "Balkrishna Universe"
-  
-    configOverwrite = {{
-        disableThirdPartyRequests: true,
-        disableLocalVideoFlip: true,
-        backgroundAlpha: 0.5
-    }}
-    interfaceConfigOverwrite = {{
-        VIDEO_LAYOUT_FIT: 'nocrop',
-        MOBILE_APP_PROMO: false,
-        TILE_VIEW_MAX_COLUMNS: 4
-    }}
-   
-    onApiReady = { (externalApi) => {  } }
-    getIFrameRef = { (iframeRef) => { iframeRef.style.height = '100vh'; } }
-/> 
+      
        
       
      
