@@ -5,7 +5,7 @@ export default function Home() {
     
        <JaaSMeeting 
     appId = { process.env.APPID }
-    roomName = "PleaseUseAGoodRoomName"
+    roomName = "Balkrishna Universe"
   
     configOverwrite = {{
         disableThirdPartyRequests: true,
