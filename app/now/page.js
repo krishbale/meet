@@ -7,7 +7,7 @@ const page = () => {
   return (
 
 <JaaSMeeting 
-appId = { process.env.APPID }
+appId = "vpaas-magic-cookie-ffb816e74be8464abdf3a4032af480b4"
 roomName = "Balkrishna Universe"
 
 configOverwrite = {{
